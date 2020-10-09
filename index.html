@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tap gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <div class="row">
+      <img onclick="img(this)" src="./image/bg1.jpg" alt="not found" />
+
+      <img  onclick="img(this)" src="./image/bg2.jpg" alt="not found" />
+
+      <img  onclick="img(this)" src="./image/bg3.jpg" alt="not found" />
+
+      <img  onclick="img(this)" src="./image/bg5.jpg" alt="not found" />
+    </div>
+    <div class="exoandimg">
+        <div class="expand">
+          <ion-icon onclick="this.parentElement.style.display = 'none'" class="icon" name="close-outline"></ion-icon>
+
+          <img id="p" src="./image/bg1.jpg" alt="not found">
+        
+
+        </div>
+    
+    </div>
+    <script>
+      const bg = document.getElementById('p')
+      function img(img){
+        bg.src = img.src
+        bg.parentElement.style.display = "block"
+      }
+    </script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </body>
+</html>

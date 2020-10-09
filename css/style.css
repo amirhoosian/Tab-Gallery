@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0 15px 0;
+
+}
+.row img{
+    width: 180px;
+    cursor: pointer;
+    transition: hover ease-in-out 5s;
+}
+.row img:hover{
+    opacity: .7;
+}
+
+
+.exoandimg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.expand{
+    position: relative;
+  
+}
+.expand img{
+    width: 100%;
+    
+}
+
+.expand .icon{
+   cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: wheat;
+}
